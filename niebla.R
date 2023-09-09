@@ -10,7 +10,7 @@ meses <- c('01','02','03','04','05','06','07','08','09','10','11','12')
 plot(x = meses, y = niebla)
 
 # editando gráfica 
-plot(x = meses, y = niebla, main = 'niebla',
+plot(x = meses, y = niebla, main = 'Foggy days',
      
      xlab = '',
      ylab = '', 
@@ -22,5 +22,5 @@ library(ggplot2)
 
 dias <- data.frame(meses, niebla) # grafica del vector (x,y)
 
-ggplot(data = dias, mapping = aes(x = meses, y = niebla)) + geom_point() + labs(title = 'dias con neblina')
+ggplot(data = dias, mapping = aes(x = meses, y = niebla)) + geom_point() + labs(title = 'Foggy days weather station 001, Teziutlan Puebla')
 
